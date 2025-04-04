@@ -54,36 +54,3 @@ window.onmousemove = function(e){
   tooltip.style.top = (y+10)+"px";
   tooltip.style.left = (x+10)+"px";
 }
-
-// password protected 
-
-document.getElementById('password').addEventListener('keydown', function(event) {
-  if (event.key === 'Enter') {
-    event.preventDefault(); // Prevent default form submission
-    checkPassword(); // Call your form submission function here
-  }
-});
-
-document.getElementById('password').addEventListener('focus', function() {
-  clearErrorMessage(); // Clear error message on input focus
-});
-
-function checkPassword() {
-  var passwordInput = document.getElementById('password').value;
-  var correctPassword = '007'; // Replace with your desired password
-  var redirectURL = 'case_instant match.html'; // Replace with the URL you want to redirect to after successful login
-  var errorMessageElement = document.getElementById('error-message');
-
-  if (passwordInput === correctPassword) {
-    // Password is correct, redirect to the specified URL after successful login
-    window.location.href = redirectURL;
-  } else {
-    // Incorrect password, display error on the page
-    errorMessageElement.textContent = 'Incorrect password. Try again or go ask Bryant.';
-  }
-}
-
-function clearErrorMessage() {
-  var errorMessageElement = document.getElementById('error-message');
-  errorMessageElement.textContent = ''; // Clear error message
-}
