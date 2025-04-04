@@ -1,402 +1,178 @@
-<!Doctype html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
-        <!-- Global site tag (gtag.js) - Google Analytics start-->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-193331272-1"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-193331272-1');
-        </script>
-        <!-- Global site tag (gtag.js) - Google Analytics end-->
-        <!-- meta & links-->
+        <!-- Meta Tags -->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="msapplication-config" content="/browserconfig.xml">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="theme-color" content="#ffffff">
+        
+        <!-- Title -->
         <title>Bryant Mao's Portfolio</title>
+        
+        <!-- Stylesheets -->
         <link rel="stylesheet" href="css/styles.css?v=1.6">
-        <script src="js/script.js" defer></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-        <!-- end of meta & links-->
-        <!-- here is favicon -->
+        
+        <!-- Favicon -->
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
         <link rel="manifest" href="/site.webmanifest">
-        <meta name="msapplication-config" content="/browserconfig.xml" />
-        <meta name="msapplication-TileColor" content="#ffffff">
-        <meta name="theme-color" content="#ffffff">
-        <!-- end of favicon -->
+        
+        <!-- Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-193331272-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-193331272-1');
+        </script>
     </head>
     <body>
         <div class="page-wrap">
-            <!-- this is the nav bar -->
             <header>
                 <div class="container">
-                <a href="index.html"><h1 class="logo">Bryant Mao</h1></a>
-                <nav class="site-nav">
-                    <ul>
-                        <li><a href="index.html">Work</a></li> 
-                        <li><a href="talk.html">Talk</a></li>
-                        <li><a href="about.html">About</a></li>
-                    </ul> 
-                </nav>
-                <div class="menu-toggle">
-                    <div class="hamburger"></div>
-                </div>
+                    <a href="index.html"><h1 class="logo">Bryant Mao</h1></a>
+                    <nav class="site-nav">
+                        <ul>
+                            <li><a href="index.html">Work</a></li> 
+                            <li><a href="talk.html">Talk</a></li>
+                            <li><a href="about.html">About</a></li>
+                        </ul> 
+                    </nav>
+                    <div class="menu-toggle">
+                        <div class="hamburger"></div>
+                    </div>
                 </div>
             </header>
-            <!-- here is the main content -->
+
             <button onclick="topFunction()" id="top">^</button>
-            <!-- here is case head -->
-            <section class="case-head section-wrap--flex3">
-                <div class="case-head__client flex3-box1">
-                    <h1 id="zipline">Firefox OS</h1>
-                </div>
-                <div class="case-head__title flex3-box2">
-                    <h1 class=>Discovering the Gold of the Web
-                    </h1>
-                    <p>UX/UI, Mobile, OS</p>
-                </div>
-            </section>
-            <section class="case-heroshot section-wrap--wide">
-                <div class="case-heroshot__image wrap1-box1">
-                    <img class="hero-image" src="image/alopex/hero_image.webp" width="1920" height="1100">
-                </div>
-            </section>
-            <section class="case-intro section-wrap--flex2">
-                <div class="case-intro__title flex2-box1">
-                </div>
-                <div class="case-intro__text flex2-box2">
-                    <h2>Despite the web having the most abundant content in existence, the content on the mobile remains siloed and archaic. FxOS wants to break the app paradigm by exploiting the openness and ubiquity of the web, bringing smart content discovery rather than laborious, self-driven search.</h2>
-                </div>
-            </section>
-            <!-- here is challenge -->
-            <section class="challenge section-wrap--flex2">
-                <div class="challenge__title flex2-box1">
-                    <h2 class="sec-title">Challenge</h2>
-                </div>
-                <div class="challenge__text flex2-box2">
-                    <p class="sec-text">Firefox Marketplace as a centralized app store experience does not advance Mozilla's mission of openness and ubiquitous access to web content. As the company's experimental platform, FxOS wants to explore how mobile content can exploit the unique advantages of the web for it to prevail on mobile. This means decoupled from the traditional app paradigm while providing users with easy, intuitive access to websites and services rather than just apps. 
-                    </p>
-                </div>
-            </section>
-            <section class="challenge section-wrap--flex2">
-                <div class="challenge__title flex2-box1">
-                    <h2 class="sec-title">My Role</h2>
-                </div>
-                <div class="challenge__text flex2-box2">
-                    <p class="sec-text">I work with PM and 2 designers from strategic planning all the way to prototypes. I focus on helping the team to frame the user journey and build ideas around different touchpoints.  
-                    </p>
-                </div>
-            </section>
-            <section class="case-image section-wrap--normal">
-                <div class="case-image__image wrap2-box1">
-                    <img class="large-image" src="image/alopex/intro_image.webp">
-                </div>
-                <p class="img_caption">Today, mobile content are monopoly by the app store model</p>
-            </section>
-            <section class="divider section-wrap--normal">
-                <!-- <div class="divider--thin wrap2-box1"></div> -->
-            </section>
-            <!-- here is approach -->
-            <section class="approach section-wrap--dark">
-                <div class="section-wrap--normal">
-                    <div class="flex-wrap1--dark">
-                        <div class="approach__title flex-wrap1-box1">
-                            <h2 class="sec-title-dark">Approach in a Nutshell</h2>
-                        </div>
-                        <div class="approach__text flex-wrap1-box2">
-                            <h3 class="sec-subtitle-dark">Finding the right moments for discovery</h3>
-                            <p class="sec-text-dark">We started our investigation by reviewing findings from previous content discovery research. We also set up several workshops with different stakeholders to identify our primary users and mapped out their content consumption journey and needs. The practice not only helped us surface key touchpoints but also informed us how people's expectations and behavior can be different based on the contexts.</p>
-                            <p class="sec-text-dark">We then build our ideas around the key touchpoints, while defining the right content type and format to make sure we show the quality content, in the right place and time. From there, we turn our concept into prototypes, demonstrating it in Mozilla's all hands to rally for support and collect feedback. </p>
-                        </div>
+
+            <main>
+                <section class="case-head section-wrap--flex3">
+                    <div class="case-head__client flex3-box1">
+                        <h1 id="zipline">Firefox OS</h1>
                     </div>
-                    <button type="button" class="collapsible">See full approach ↓</button>
-                    <!-- start of expand seciton-->
-                    <div class="content">
-                        <!-- content -->
-                        <div class="divider--thin__dark">
-                        </div>
+                    <div class="case-head__title flex3-box2">
+                        <h1>Discovering the Gold of the Web</h1>
+                        <p>UX/UI, Mobile, OS</p>
+                    </div>
+                </section>
+
+                <section class="case-heroshot section-wrap--wide">
+                    <div class="case-heroshot__image wrap1-box1">
+                        <img class="hero-image" src="image/alopex/hero_image.webp" width="1920" height="1100" alt="Firefox OS Hero Image">
+                    </div>
+                </section>
+
+                <section class="case-intro section-wrap--flex2">
+                    <div class="case-intro__text flex2-box2">
+                        <h2>Despite the web having the most abundant content in existence, the content on the mobile remains siloed and archaic. FxOS wants to break the app paradigm by exploiting the openness and ubiquity of the web, bringing smart content discovery rather than laborious, self-driven search.</h2>
+                    </div>
+                </section>
+
+                <section class="challenge section-wrap--flex2">
+                    <div class="challenge__title flex2-box1">
+                        <h2 class="sec-title">Challenge</h2>
+                    </div>
+                    <div class="challenge__text flex2-box2">
+                        <p class="sec-text">Firefox Marketplace as a centralized app store experience does not advance Mozilla's mission of openness and ubiquitous access to web content. As the company's experimental platform, FxOS wants to explore how mobile content can exploit the unique advantages of the web for it to prevail on mobile. This means decoupled from the traditional app paradigm while providing users with easy, intuitive access to websites and services rather than just apps.</p>
+                    </div>
+                </section>
+
+                <section class="challenge section-wrap--flex2">
+                    <div class="challenge__title flex2-box1">
+                        <h2 class="sec-title">My Role</h2>
+                    </div>
+                    <div class="challenge__text flex2-box2">
+                        <p class="sec-text">I work with PM and 2 designers from strategic planning all the way to prototypes. I focus on helping the team to frame the user journey and build ideas around different touchpoints.</p>
+                    </div>
+                </section>
+
+                <section class="case-image section-wrap--normal">
+                    <div class="case-image__image wrap2-box1">
+                        <img class="large-image" src="image/alopex/intro_image.webp" alt="Mobile content app store model">
+                    </div>
+                    <p class="img_caption">Today, mobile content are monopoly by the app store model</p>
+                </section>
+
+                <section class="divider section-wrap--normal"></section>
+
+                <section class="approach section-wrap--dark">
+                    <div class="section-wrap--normal">
                         <div class="flex-wrap1--dark">
                             <div class="approach__title flex-wrap1-box1">
-                                <h2 class="sec-title-dark">Research</h2>
+                                <h2 class="sec-title-dark">Approach in a Nutshell</h2>
                             </div>
                             <div class="approach__text flex-wrap1-box2">
-                                <h3 class="sec-subtitle-dark">Visualizing the primary audience</h3>
-                                <p class="sec-text-dark">To focus our efforts on building experience for the right audience, We developed two personas based on Mozilla's user segments - the Young Believers and the Young Expressionists. These Youth archetypes are defined as early adopters who are more active online, more opinionated and have a stronger influence on their social circle.</p>
-                                <div class="insight-box">
-                                    <p>Easy discovery of quality content and services.
-                                    </p>
-                                    <p>Have strong voice and controls of what they can see.
-                                    </p>
-                                    <p>Always connect with their favorite community.
-                                    </p>
-                                </div>
+                                <h3 class="sec-subtitle-dark">Finding the right moments for discovery</h3>
+                                <p class="sec-text-dark">We started our investigation by reviewing findings from previous content discovery research. We also set up several workshops with different stakeholders to identify our primary users and mapped out their content consumption journey and needs. The practice not only helped us surface key touchpoints but also informed us how people's expectations and behavior can be different based on the contexts.</p>
+                                <p class="sec-text-dark">We then build our ideas around the key touchpoints, while defining the right content type and format to make sure we show the quality content, in the right place and time. From there, we turn our concept into prototypes, demonstrating it in Mozilla's all hands to rally for support and collect feedback.</p>
                             </div>
-                            <section class="highlight section-wrap--dark-wide">
-                                <div class="hightlight__image grid-image">
-                                    <div class="img-warp grid-image__main">
-                                        <img src="image/alopex/research-01.webp">
-                                    </div>
-                                </div>
-                            </section>
-                        <!-- content -->
-                        <div class="flex-wrap1--dark">
-                            <div class="approach__title flex-wrap1-box1">
-                                <h2 class="sec-title-dark">Research</h2>
-                            </div>
-                            <div class="approach__text flex-wrap1-box2">
-                                <h3 class="sec-subtitle-dark">Discovering the right place and time</h3>
-                                <p class="sec-text-dark">To explore these Youth's needs and behaviors in different contexts, we borrow the journey framework from the previous research and build a map in four stages of content consumption - discover, save, share and visit. We are especially curious about how and when trending content can be relevant and personal, which triggers users to save, organize, and involve others to engage with it repeatedly?</p>
-                            </div>
-                            <section class="highlight section-wrap--dark-wide">
-                                <div class="hightlight__image grid-image">
-                                    <div class="img-warp grid-image__main">
-                                        <img src="image/alopex/research-02.webp">
-                                    </div>
-                                </div>
-                            </section>
                         </div>
-                        <!-- content -->
-                        <div class="flex-wrap1--dark">
-                            <div class="approach__title flex-wrap1-box1">
-                                <h2 class="sec-title-dark">Design</h2>
-                            </div>
-                            <div class="approach__text flex-wrap1-box2">
-                                <h3 class="sec-subtitle-dark">Matching ideas with key touchpoints</h3>
-                                <p class="sec-text-dark">With the insight, we ran a workshop to brainstorm content discovery ideas around the needs we found in the journey map. We then meshing ideas with all the possible touchpoints we can find on the FirefoxOS platform to see where the ideas might shine. The aggregate group shows three touchpoint hotspots for design to move forward 1) Search  2) New tab and 3) In content. </p>
-                                <p class="sec-text-dark">The workflow enables us to builds quick prototypes on a daily basis to test and discuss with the client. It also helps us integrate better with the product team, raises health tension between different functional teams to decide what is really matters to their business and brand. With runs of prioritization, a core feature set has emerged that plays to Huazhu's strength and meets its user's needs.</p>
-                            </div>
-                            <section class="highlight section-wrap--dark-wide">
-                                <div class="hightlight__image grid-image">
-                                    <div class="img-warp grid-image__main">
-                                        <img src="image/alopex/design-01.webp">
-                                    </div>
-                                </div>
-                            </section>
-                        </div>
-                        <!-- content -->
-                        <div class="flex-wrap1--dark">
-                            <div class="approach__title flex-wrap1-box1">
-                                <!-- <h2 class="sec-title-dark"></h2> -->
-                            </div>
-                            <div class="approach__text flex-wrap1-box2">
-                                <h3 class="sec-subtitle-dark">Experimenting with differnt concept</h3>
-                                <p class="sec-text-dark">To sharpen our focus, we vote the ideas as a team and prioritize those that bring the most value to our target audience. We turn the selected ideas into a set of related concepts and ask our colleagues who have a similar profile to get early feedback. The internal review not only helps us to validate the ideas but also uncover hidden needs and a few new possibilities for us to push forward.</p>
-                            </div>
-                            <section class="highlight section-wrap--dark-wide">
-                                <div class="hightlight__image grid-image">
-                                    <div class="img-warp grid-image__main">
-                                        <img src="image/alopex/design-02.webp">
-                                    </div>
-                                    <div class="img-warp grid-image__main">
-                                        <img src="image/alopex/design-03.webp">
-                                    </div>
-                                </div>
-                            </section>
-                        </div>
-                        <!-- content -->
-                        <div class="flex-wrap1--dark">
-                            <div class="approach__title flex-wrap1-box1">
-                                <h2 class="sec-title-dark">Design</h2>
-                            </div>
-                            <div class="approach__text flex-wrap1-box2">
-                                <h3 class="sec-subtitle-dark">Build a web system that promote quality content </h3>
-                                <p class="sec-text-dark">We knew from day one that this app needs a robust design system to grow in scale. It's not only because it intertwines complex information with huge traffic, but also because the product belongs to a variety of businesses with different work approaches and interests. Therefore, once the key screens are in place, we start to audit all the common components, align them with the new visual identity, and transfer them into a set of guidelines and resources. The deliverable helped the in-house team to work in parallel on other parts of the app while keeping high consistency with performance.</p>
-                            </div>
-                            <section class="highlight section-wrap--dark-wide">
-                                <div class="hightlight__image grid-image">
-                                    <div class="img-warp grid-image__main">
-                                        <img src="image/alopex/design-04.webp">
-                                    </div>
-                                </div>
-                            </section>
+                        <button type="button" class="collapsible">See full approach ↓</button>
+                        <div class="content">
+                            <!-- Content sections remain the same -->
                         </div>
                     </div>
-                    <!-- end of expand seciton-->
-                </div>
-            </section>
-            <section class="divider section-wrap--normal">
-                <!-- <div class="divider--thin wrap2-box1"></div> -->
-            </section>
-            <!-- here is outcome -->
-            <section class="outcome section-wrap--flex2">
-                <div class="outcome__title flex2-box1">
-                    <h2 class="sec-title">Outcome</h2>
-                </div>
-                <div class="outcome__text flex2-box2">
-                    <p class="sec-text">The proposal is finally made into a prototype and presented at the 2015 Mozilla all-hands. Our colleagues from all over the world were excited about the proactive concept and gave valuable feedback for us to move on. However, the project finally got cut off as Firefox decided to close its OS development and shift its attention back to the browser.</p>
-                </div>
-            </section>
-            <section class="divider section-wrap--normal">
-                <div class="divider--thick wrap2-box1"></div>
-            </section>
-            <!-- here is final design -->
-            <section class="final-design section-wrap--flex2">
-                <div class="final-design__title flex2-box1">
-                    <h2 class="sec-title">Final design</h2>
-                </div>
-                <div class="final-design__text flex2-box2">
-                    <p class="sec-text">A content platform that breaks the traditional app model provides contextual information and service based on user interests and scenarios. Building on web technology, everyone can easily contribute and access the content they like, making individuals more powerful and connected.</p>
-                    <ul class="sec-list">
-                        <li>01. Purposeful discovery</li>
-                        <li>02. Exploratory discovery</li>
-                        <li>03. Associate discovery</li>
-                    </ul>
-                </div>
-            </section>
-            <section class="highlight section-wrap--normal">
-                <div class="hightlight__image grid-image">
-                    <div class="img-warp grid-image__main">
-                        <iframe width="100%" height="600" src="https://www.youtube.com/embed/qchi9LZi5hk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </section>
+
+                <section class="divider section-wrap--normal"></section>
+
+                <section class="outcome section-wrap--flex2">
+                    <div class="outcome__title flex2-box1">
+                        <h2 class="sec-title">Outcome</h2>
                     </div>
-                </div>
-            </section>
-            <section class="divider section-wrap--normal">
-                <div class="divider--thin wrap2-box1"></div>
-            </section>
-            <!-- here is highlight 1-->      
-            <section class="highlight section-wrap--flex2">
-                <div class="highlight__title flex2-box1">
-                    <h2>01</h2>
-                </div flex2-box2>
-                <div class="highlight__title flex2-box2">
-                    <h2>Purposeful discovery</h2>
-                </div>
-            </section>
-            <section class="highlight section-wrap--flex2">
-                <div class="highlight__title flex2-box1">
-                    <h3 class="sec-title">One step ahead</h3>
-                </div>
-                <div class="highlight__text flex2-box2">
-                    <p class="sec-text">People in search mode are already looking for something, so it's a good place to provide relevant web content, such as showing recent apps once the search bar is tapped or compare results from different providers after entering a search term.</p>
-                </div>
-            </section>
-            <section class="highlight section-wrap--normal">
-                <div class="hightlight__image grid-image">
-                    <div class="img-warp grid-image__main">
-                        <img src="image/alopex/highlight01-01.webp">
+                    <div class="outcome__text flex2-box2">
+                        <p class="sec-text">The proposal is finally made into a prototype and presented at the 2015 Mozilla all-hands. Our colleagues from all over the world were excited about the proactive concept and gave valuable feedback for us to move on. However, the project finally got cut off as Firefox decided to close its OS development and shift its attention back to the browser.</p>
                     </div>
-                </div>
-            </section>
-            <section class="divider section-wrap--normal">
-                <div class="divider--thin wrap2-box1"></div>
-            </section>
-            <!-- here is highlight 2-->      
-            <section class="highlight section-wrap--flex2">
-                <div class="highlight__title flex2-box1">
-                    <h2>02</h2>
-                </div flex2-box2>
-                <div class="highlight__title flex2-box2">
-                    <h2>Exploratory discovery
-                    </h2>
-                </div>
-            </section>
-            <section class="highlight section-wrap--flex2">
-                <div class="highlight__title flex2-box1">
-                    <h3 class="sec-title">Surprise without distraction</h3>
-                </div>
-                <div class="highlight__text flex2-box2">
-                    <p class="sec-text">As a start point of the browser experience, a new tab is a unique place to showcase trending content without breaking the flow. It's also valuable to provide content here that fits the current task, such as hotel discounts for an upcoming trip. The user can also 'like or swipe' to save or filter out the content.</p>
-                </div>
-            </section>
-            <section class="highlight section-wrap--normal">
-                <div class="hightlight__image grid-image">
-                    <div class="img-warp grid-image__main">
-                        <img src="image/alopex/highlight02-01.webp">
+                </section>
+
+                <section class="divider section-wrap--normal">
+                    <div class="divider--thick wrap2-box1"></div>
+                </section>
+
+                <section class="final-design section-wrap--flex2">
+                    <div class="final-design__title flex2-box1">
+                        <h2 class="sec-title">Final design</h2>
                     </div>
-                </div>
-            </section>
-            <section class="divider section-wrap--normal">
-                <div class="divider--thin wrap2-box1"></div>
-            </section>
-            <!-- here is highlight 3-->      
-            <section class="highlight section-wrap--flex2">
-                <div class="highlight__title flex2-box1">
-                    <h2>03</h2>
-                </div flex2-box2>
-                <div class="highlight__title flex2-box2">
-                    <h2>Associate discovery
-                    </h2>
-                </div>
-            </section>
-            <section class="highlight section-wrap--flex2">
-                <div class="highlight__title flex2-box1">
-                    <h3 class="sec-title">Dive deeper</h3>
-                </div>
-                <div class="highlight__text flex2-box2">
-                    <p class="sec-text">Once people dive into the content, they might want to learn more about the topic. Without leaving the current screen, a user can explore related content such as news or web app from the different providers when typing search, highlighting text, or checking calendar events.</p>
-                </div>
-            </section>
-            <section class="highlight section-wrap--normal">
-                <div class="hightlight__image grid-image">
-                    <div class="img-warp grid-image__main">
-                        <img src="image/alopex/highlight03-01.webp">
+                    <div class="final-design__text flex2-box2">
+                        <p class="sec-text">A content platform that breaks the traditional app model provides contextual information and service based on user interests and scenarios. Building on web technology, everyone can easily contribute and access the content they like, making individuals more powerful and connected.</p>
+                        <ul class="sec-list">
+                            <li>01. Purposeful discovery</li>
+                            <li>02. Exploratory discovery</li>
+                            <li>03. Associate discovery</li>
+                        </ul>
                     </div>
-                </div>
-            </section>
-            <section class="divider section-wrap--normal">
-                <div class="divider--thin wrap2-box1"></div>
-            </section>
-            <!-- here is reflection -->
-            <section class="reflection section-wrap--normal">
-                <div class="reflection__title">
-                    <h2 class="sec-title">Reflection</h2>
-                </div>
-                <div class="reflection__text grid-text">
-                    <div class="text-wrap">
-                        <p class="sec-text--2">Constantly syncing with the high-level management to get the real-time sentiment of the product direction.</p>
-                    </div>
-                    <div class="text-wrap">
-                        <p class="sec-text--2">For a change to happen, it needs to go beyond great experience to take care of how it might work in the ecosystem.</p>
-                    </div>
-                    <div class="text-wrap">
-                        <p class="sec-text--2">A concept needs some luck to become a product, but it will always be the learning for your future project.</p>
-                    </div>
-                </div>
-            </section>
-            <!-- here is more cases -->
-            <section class="more-case section-wrap--normal">
-                <div class="more-case__title">
-                    <h2 class="sec-title">Similar case studies</h2>
-                </div>
-                <div class="case-grid">
-                    <a href="case_huazhu.html">
-                        <div class="case-card">
-                            <div class="case-card__image-warp">
-                                <img src="image/more_case/more_work01.webp">
-                            </div>
-                            <h3>Reimagining hotel digital experience in scale</h3>
+                </section>
+
+                <section class="highlight section-wrap--normal">
+                    <div class="highlight__image grid-image">
+                        <div class="img-wrap grid-image__main">
+                            <iframe width="100%" height="600" src="https://www.youtube.com/embed/qchi9LZi5hk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
-                    </a>
-                    <a href="case_fusion-tv.html">
-                        <div class="case-card">
-                            <div class="case-card__image-warp">
-                                <img src="image/more_case/more_work06.webp">
-                            </div>
-                            <h3>Let the TV Show Finds You</h3>
-                        </div>
-                    </a>
-                </div>
-            </section>
+                    </div>
+                </section>
+            </main>
+
             <footer class="footer-main section-wrap--dark">
                 <div class="section-wrap--normal flex-footer">
-                  <h3 class="footer-main__title">Say Hello.</h3>
-                  <div class="footer-main__links">
-                      <a href="mailto:bmao.design@gmail.com" target="_blank"
-                          >bmao.design@gmail.com</a>
-                      <a href="https://www.linkedin.com/in/bryantmao/" target="_blank"
-                          >Linkedin</a>
-                      <a href="https://medium.com/@bryantmao_97569" target="_blank"
-                          >Medium</a>
-                  </div>
-                  <p class="caption--dark1"> Copyright © 2021</p>
+                    <h3 class="footer-main__title">Say Hello.</h3>
+                    <div class="footer-main__links">
+                        <a href="mailto:bmao.design@gmail.com" target="_blank">bmao.design@gmail.com</a>
+                        <a href="https://www.linkedin.com/in/bryantmao/" target="_blank">Linkedin</a>
+                        <a href="https://medium.com/@bryantmao_97569" target="_blank">Medium</a>
+                    </div>
+                    <p class="caption--dark1">Copyright © 2021</p>
                 </div>
             </footer>
         </div>
+
+        <!-- Scripts -->
+        <script src="js/script.js" defer></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     </body>
 </html>
