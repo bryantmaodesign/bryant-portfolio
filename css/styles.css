@@ -809,13 +809,13 @@ header {
 }
 
 .flex-wrap1--dark {
-    display:flex;
+    display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     margin: 0 auto;
-    /* padding: 1.5em; */
+    padding: 1em;
     max-width: 1000px;
-    background-color: #102535;
+    min-height: fit-content;
 }
 
 .section-wrap--dark-wide {
@@ -951,10 +951,10 @@ header {
 }
 
 .content {
-    overflow: hidden;
-    background-color: transparent;
     max-height: 0;
-    transition: max-height 0.5s ease-out;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    min-height: 100%;
 }
 
 @media (min-width: 700px) {
