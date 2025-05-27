@@ -1,56 +1,60 @@
 // hamburger menu 
-
-$('.menu-toggle').click(function() {
-
-  $('.site-nav').toggleClass('site-nav--open', 300);
-  $(this).toggleClass('open');
-  
-})
+document.querySelector('.menu-toggle').addEventListener('click', function() {
+    document.querySelector('.site-nav').classList.toggle('site-nav--open');
+    this.classList.toggle('open');
+});
 
 // collapsible approach section
+document.querySelectorAll('.collapsible').forEach(coll => {
+    coll.addEventListener('click', function() {
+        this.classList.toggle('active');
+        const content = this.nextElementSibling;
+        if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+        } else {
+            content.style.maxHeight = content.scrollHeight + 'px';
+        }
+    });
+});
 
-var coll = document.getElementsByClassName("collapsible");
-var i;
+// back to top button
+const topButton = document.getElementById('top');
 
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.maxHeight){
-      content.style.maxHeight = null;
-    } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-    }
-  });
+// Debounce function to limit how often the scroll handler runs
+function debounce(func, wait) {
+    let timeout;
+    return function executedFunction(...args) {
+        const later = () => {
+            clearTimeout(timeout);
+            func(...args);
+        };
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+    };
 }
-
-//back to top button
-
-topbutton = document.getElementById("top");
 
 // When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    topbutton.style.display = "block";
-  } else {
-    topbutton.style.display = "none";
-  }
-}
+window.addEventListener('scroll', debounce(() => {
+    if (document.documentElement.scrollTop > 50) {
+        topButton.style.display = 'block';
+    } else {
+        topButton.style.display = 'none';
+    }
+}, 100));
 
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
 }
 
-// tooltip
-var tooltip = document.getElementById("tooltip");
-
-window.onmousemove = function(e){
-  var x = e.clientX;
-  var y = e.clientY;
-  tooltip.style.top = (y+10)+"px";
-  tooltip.style.left = (x+10)+"px";
+// tooltip - only initialize if tooltip element exists
+const tooltip = document.getElementById('tooltip');
+if (tooltip) {
+    window.addEventListener('mousemove', debounce((e) => {
+        tooltip.style.top = (e.clientY + 10) + 'px';
+        tooltip.style.left = (e.clientX + 10) + 'px';
+    }, 16)); // 60fps
 }

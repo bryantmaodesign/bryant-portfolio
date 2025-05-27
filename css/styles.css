@@ -1,7 +1,32 @@
+:root {
+    /* Colors */
+    --color-primary: #1D31FF;
+    --color-text: #222B45;
+    --color-text-light: #8F9BB3;
+    --color-background: #ffffff;
+    --color-background-dark: #EBEBD3;
+    
+    /* Typography */
+    --font-family: 'Open Sans', sans-serif;
+    --font-size-base: 1em;
+    --font-size-small: 0.9em;
+    --font-size-large: 1.1em;
+    --font-size-xlarge: 2.3em;
+    
+    /* Spacing */
+    --spacing-xs: 0.5em;
+    --spacing-sm: 1em;
+    --spacing-md: 2em;
+    --spacing-lg: 3em;
+    
+    /* Breakpoints */
+    --breakpoint-mobile: 700px;
+}
+
 * {
     box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
-    color: #222B45;
+    font-family: var(--font-family);
+    color: var(--color-text);
     margin: 0;
     padding: 0;
 }
@@ -36,7 +61,7 @@ section-normal--dark
 /* here is nav bar */
 
 header {
-    color: #EBEBD3;
+    color: var(--color-background-dark);
     padding: 2.5em 0;
     position: relative;
 }
@@ -45,17 +70,17 @@ header {
     width: 95%;
     max-width: 1200px;
     margin: 0 auto;
-    background-color: #1D31FF;
+    background-color: var(--color-primary);
 }
 
 .logo {
     float: left;
-    font-size: 1em;
-    padding-left: .5em;
+    font-size: var(--font-size-base);
+    padding-left: var(--spacing-xs);
     margin: 0;
     text-transform: uppercase;
     font-weight: 700;
-    letter-spacing: .2em;
+    letter-spacing: 0.2em;
 }
 
 .site-nav {
@@ -64,16 +89,16 @@ header {
     top: 100%;
     right: 0%;
     width: 100%;
-    background: white;
+    background: var(--color-background);
     height: 0;
     overflow: hidden;
 }
 
 .site-nav--open {
     height: auto;
-    background: white;
+    background: var(--color-background);
     opacity: 98%;
-    padding: 3em 3em;
+    padding: var(--spacing-lg) var(--spacing-lg);
 }
 
 
@@ -91,27 +116,29 @@ header {
 
 .site-nav a {
     text-decoration: none;
-    color: #222B45;
+    color: var(--color-text);
     display: block;
-    padding: 2em 0 2em 0;
+    padding: var(--spacing-md) 0;
     text-transform: uppercase;
-    letter-spacing: .1em;
-    font-size: .9em;
+    letter-spacing: 0.1em;
+    font-size: var(--font-size-small);
 }
 
 .site-nav a:hover,
 .site-nav a:focus {
-  background: #1D31FF;
-  color: white;
-  border-bottom: 1px solid #1D31FF;
+    background: var(--color-primary);
+    color: var(--color-background);
+    border-bottom: 1px solid var(--color-primary);
 }
 
 .menu-toggle {
-    padding: 1em;
+    padding: var(--spacing-sm);
     position: absolute;
     top: 2.1em;
     right: 1em;
     cursor: pointer;
+    background: none;
+    border: none;
 }
 
 .hamburger,
@@ -119,7 +146,7 @@ header {
 .hamburger::after {
     content: '';
     display: block;
-    background: #222B45;
+    background: var(--color-text);
     height: 2px;
     width: 1.5em;
     border-radius: 3px;
@@ -136,7 +163,7 @@ header {
 
 .open .hamburger {
     transform: rotate(45deg);
-    background-color: #222B45;
+    background-color: var(--color-text);
 }
 
 .open .hamburger::before {
@@ -145,7 +172,7 @@ header {
   
 .open .hamburger::after {
     transform: translateY(-3px) rotate(-90deg);
-    background-color: #222B45;
+    background-color: var(--color-text);
 }
 
 @media (min-width: 700px) {
@@ -176,14 +203,14 @@ header {
 
     .site-nav a {
         padding: 0;
-        margin-left: 3em;
-        color: #222B45;
+        margin-left: var(--spacing-lg);
+        color: var(--color-text);
     }
 
     .site-nav a:hover,
     .site-nav a:focus {
         background: transparent;
-        color: #1D31FF;
+        color: var(--color-primary);
     }
 
 }
@@ -427,7 +454,7 @@ header {
 /* here is home page */
 
 .section-wrap--case {
-    padding: 1em 1em;
+    padding: var(--spacing-md);
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -436,9 +463,9 @@ header {
     /* font-family: Playfair Display; */
     font-style: normal;
     font-weight: normal;
-    font-size: 2.5em;
-    margin: 3em 0 1.5em 0;
-    color: #222B45;
+    font-size: var(--font-size-xlarge);
+    margin: var(--spacing-lg) 0 var(--spacing-lg) 0;
+    color: var(--color-text);
     max-width: 800px;
 }
 
@@ -450,15 +477,15 @@ header {
 }
 
 .headline__text a:hover {
-    color: #1D31FF;
-    border-bottom: 1px solid #1D31FF;
+    color: var(--color-primary);
+    border-bottom: 1px solid var(--color-primary);
 }
 
 .grid {
     display: grid;
-    grid-gap: 5em 1em;
+    grid-gap: var(--spacing-md) 1em;
     grid-template-columns: 1fr;
-    margin-bottom: 5em;
+    margin-bottom: var(--spacing-md);
 }
 
 .grid a {
@@ -490,7 +517,7 @@ header {
 .case-card p{
     font-size: 1.1em;
     font-weight: 400;
-    color: #8F9BB3;
+    color: var(--color-text-light);
 }
 
 #tooltip{
@@ -582,14 +609,14 @@ header {
 .case-head__title h1 {
     font-weight: 500;
     font-size: 2.2em;
-    color: #222B45;
+    color: var(--color-text);
     margin-bottom: .5em;
 }
 
 .case-head__title p {
     font-size: 1.1em;
     font-weight: 400;
-    color: #8F9BB3;
+    color: var(--color-text-light);
     margin-bottom: 1em;
 }
 
@@ -710,7 +737,7 @@ header {
 }
 
 .divider--thick {
-    border-top: 3px solid #222B45;
+    border-top: 3px solid var(--color-text);
     margin: 1em 0;
 }
 
@@ -767,7 +794,7 @@ header {
     font-size: 1em;
     font-style: italic;
     margin:1em 0;
-    color: #8F9BB3;
+    color: var(--color-text-light);
 }
 
 @media (min-width: 700px) {
@@ -839,7 +866,7 @@ header {
     /* font-weight: 600; */
     font-size: 1.1em;
     margin-bottom: 1.5em;
-    color: #E8E8E8;
+    color: var(--color-background-dark);
 }
 
 .sec-text-dark {
@@ -847,18 +874,18 @@ header {
     font-size: 1.1em;
     line-height: 1.6em;
     margin-bottom: 1em;
-    color: #E8E8E8;
+    color: var(--color-background-dark);
 }
 
 .sec-subtitle-dark {
     /* font-weight: 600; */
     font-size: 1.2em;
     margin-bottom: 1em;
-    color: #E8E8E8;
+    color: var(--color-background-dark);
 }
 
 .btn-expand {
-    color:#AAA2FD;
+    color:var(--color-primary);
     font-size: 1em;
     font-weight: 600;
     text-decoration: none;
@@ -867,13 +894,13 @@ header {
 .insight-box {
     margin: 2.5em 0;
     padding: 0 2em 0 2em;
-    border-left: 1px solid white;
+    border-left: 1px solid var(--color-background-dark);
 
 }
 
 .insight-box p {
     font-family: 'Playfair Display', serif;
-    color: white;
+    color: var(--color-background-dark);
     font-size: 1.1em;
     line-height: 1.6em;
     margin-bottom: 1.5em;
@@ -898,7 +925,7 @@ header {
         /* font-weight: 600; */
         font-size: 1.2em;
         margin-bottom: 1.5em;
-        color: #E8E8E8;
+        color: var(--color-background-dark);
     }
     
     .sec-text-dark {
@@ -912,13 +939,13 @@ header {
         /* font-weight: 600; */
         font-size: 1.5em;
         margin-bottom: 1em;
-        color: #E8E8E8;
+        color: var(--color-background-dark);
     }
 
     .insight-box {
         margin: 3em 0;
         padding: 0 2em 0 4em;
-        border-left: 1px solid white;
+        border-left: 1px solid var(--color-background-dark);
     }
 
     .insight-box p {
@@ -931,11 +958,11 @@ header {
 
 .collapsible {
     background-color: transparent;
-    color: white;
+    color: var(--color-background-dark);
     cursor: pointer;
     padding: 2em 2em;
     width: 100%;
-    border: 1px solid white;   
+    border: 1px solid var(--color-background-dark);   
     text-align: center;
     outline: none;
     font-size: .8em;
@@ -946,8 +973,8 @@ header {
   }
 
 .collapsible:hover {
-    background-color: white;
-    color: #112535;
+    background-color: var(--color-background-dark);
+    color: var(--color-primary);
 }
 
 .content {
@@ -1167,28 +1194,28 @@ header {
 #top {
     display: none; 
     position: fixed; /* Fixed/sticky position */
-    bottom: 2.5em; /* Place the button at the bottom of the page */
-    right: 1em; /* Place the button 30px from the right */
+    bottom: var(--spacing-md); /* Place the button at the bottom of the page */
+    right: var(--spacing-md); /* Place the button 30px from the right */
     z-index: 99; /* Make sure it does not overlap */
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
-    background-color:#1D31FF; /* Set a background color */
-    color: white; /* Text color */
+    background-color: var(--color-primary); /* Set a background color */
+    color: var(--color-background); /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
-    border-radius: 50px; /* Rounded corners */
-    font-size: 1em; /* Increase font size */
-    width: 60px;
-    height: 60px;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: 50%;
+    font-size: var(--font-size-large);
+    transition: background-color 0.3s ease;
 }
   
 #top:hover {
-    background-color:#1D31FF; /* Add a dark-grey background on hover */
+    background-color: var(--color-text);
 }
 
 @media (min-width:700px) {
     #top {
-        bottom: 2.5em; /* Place the button at the bottom of the page */
-        right: 2em; /* Place the button 30px from the right */
+        bottom: var(--spacing-md); /* Place the button at the bottom of the page */
+        right: var(--spacing-md); /* Place the button 30px from the right */
     }
 }
 
@@ -1278,7 +1305,7 @@ header {
 }
 
 .purple-text2 {
-    color: #1D31FF;
+    color: var(--color-primary);
 }
 
 .talks-card__image-warp {
@@ -1303,7 +1330,7 @@ header {
     line-height: 1em;
     letter-spacing: 0.15em;
     text-transform: uppercase;
-    color: #1D31FF;
+    color: var(--color-primary);
     margin: 2em 0 1em 0;
 }
 
@@ -1324,7 +1351,7 @@ header {
 .talks-card_author {
     font-size: 1em;
     line-height: 1.2em;
-    color: #8F9BB3;
+    color: var(--color-text-light);
 }
 
 .talks-card--long {
